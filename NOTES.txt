@@ -1,0 +1,22 @@
+1) npx  --> Node Package Executor
+
+2) npx create-react-app <app-name>   -->  This is the way to create a react app.
+
+3) npm run start  --> It is used to start the app
+
+4) npm run build  --> It is for the deployment of the app in the production. It creates a build folder which includes all the js, css files and many more, this is the folder that is actually served to the user for using not the actuial source folder.
+
+
+5) Creating a react app thorugh vite
+--> 
+    (i) npm create vite@latest  --> Using NPM's create utility to create a new vite project that is latest.
+
+    (ii) Choose "react"
+
+    (iii) Choose "JavaScript"
+
+    NOTE: Now you will see that the 01vitereact project does not have the node_modules folder.
+
+    (iv) So you need to move to the project directory and install the npm (npm install) which install all the required modules.
+
+
