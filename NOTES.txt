@@ -1,3 +1,5 @@
+------------------1. INTRO TO REACT APP ------------------
+
 1) npx  --> Node Package Executor
 
 2) npx create-react-app <app-name>   -->  This is the way to create a react app.
@@ -20,3 +22,37 @@
     (iv) So you need to move to the project directory and install the npm (npm install) which install all the required modules.
 
 
+------ 2. Understanding the React flow and structure -----------
+
+
+(A) 01basicreact
+
+    1) Main Entry point: "01basicreact\src\index.js"
+
+
+    2) Understanding "01basicreact\src\index.js":
+
+
+    React and ReactDOM   -->  2 libraries that are being imported to manipulate the DOM of Web 
+
+    React -> Core Foundational Library
+    ReactDOM -> This is the implemention of React on Web
+
+    NOTE: React creats its own DOM known as "Virtual DOM"
+
+
+    Refer to the files itself for better understanding
+
+    3) If you notice that there is no js file injected in 01basicreact\public\index.html but still it is rendering with the help of index.js  --->  "react-scripts": "5.0.1" from 01basicreact\package.json does this all
+
+
+(B) 02vitereact
+
+    1) .jsx file allows you to send a single element. So better use fragment 
+    <>
+    // More elements inside fragment enclosure
+    </>
+
+    2) the function name in .jsx file should always start with a caps letter (strict rule otherwise error)
+
+    3) Created a myfile.jsx which will render another html which is exported to App.jsx inside the App()
