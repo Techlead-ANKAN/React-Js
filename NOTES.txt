@@ -60,3 +60,45 @@
     NOTE: Doing the same for 01basicreact
 
 NOTE: For any case either react app through vite or not you should start the name of the react components with caps letter. Do it with the folder name also (good/ideal practice)
+
+
+
+---------- 3. Creating Own react library and jsx -----------
+
+1) When we send a html element this is how the element looks like after the react parses that element
+
+// Note the actual one just a sample
+const reactElement = {
+    type: "a",
+    props:{
+        href: "https://google.com",
+        target: "_blank"
+    },
+    children: "Visit Google.com"
+}
+
+2 ) we can create React element using React.createElement() method which has  special syntax for taking parameters attributes or properties of the element
+
+Example:
+
+const react_element = React.createElement(
+
+    // 1st Parameter - Tags (Type of element to be created)
+    "a",
+
+    // 2nd Parameter - Object (All the attributes of the element)
+    {
+        href: "https://google.com",
+        target: "_blank"
+    },
+
+    // 3rd Parameter - Text
+    "Click me to visit Google"
+)
+
+
+
+3) This is how we send variables inside a html tag in a .jsx file:   {variable_name}
+
+Note : {username} it is an evaluated expression which means that you can only use expressions that are already evaluated. You can evaluate within this expression like this :
+{if (true) username}
