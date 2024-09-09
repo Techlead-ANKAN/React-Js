@@ -102,3 +102,12 @@ const react_element = React.createElement(
 
 Note : {username} it is an evaluated expression which means that you can only use expressions that are already evaluated. You can evaluate within this expression like this :
 {if (true) username}
+
+
+
+
+---------- 3. Hooks in Reacts -----------
+
+React Hooks are functions that allow you to use state and other React features in functional components. Introduced in React 16.8, they enable you to manage component state and lifecycle without needing to write class components.
+
+let [<state>, <setState>] = useState(<initial_value>);
