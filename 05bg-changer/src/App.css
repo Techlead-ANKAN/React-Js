@@ -1,0 +1,49 @@
+.colors{
+  top: 90%;
+  left: 15%;
+  position: absolute;
+  width: 70%;
+  height: 7%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  align-items: center;
+  background-color: black;
+}
+
+p{
+  width: 8%;
+  height: 50%;
+  font-size: 150%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.red{
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+.pink{
+  background-color: pink;
+}
+.black{
+  background-color: black;
+}
+.grey{
+  background-color: grey;
+}
+.yellow{
+  background-color: yellow;
+}
