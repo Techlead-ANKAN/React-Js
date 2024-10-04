@@ -1,0 +1,60 @@
+.container{
+  width: 30%;
+  min-height: 20vh;
+  background-color: black;
+  border-radius: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input1{
+  width: 70%;
+  height: 2.5em;
+  border-radius: 7em;
+  padding: 1%;
+  padding-left: 2%;
+  font-size: 1.3em;
+  border: none;
+}
+
+.container button{
+  width: 7em;
+  height: 3em;
+  padding: 1%;
+  margin-top: 1%;
+  border-radius: 1em;
+  background-color: #1e8fd1;
+  border: none;
+  font-size: 75%;
+  font-weight: 700;
+  color: white;
+}
+
+.parameters {
+  width: 70%;
+  height: 2.5em;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+label{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  /* font-weight: 200; */
+  color: aliceblue;
+  margin-left: -2%;
+}
+
+.parameters input{
+  width: 15%;
+  height: 50%;
+  border-radius: 10%;
+}
+
+.input2:hover{
+  cursor: pointer;
+}
