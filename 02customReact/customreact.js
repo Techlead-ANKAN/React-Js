@@ -1,7 +1,7 @@
 function customRender(reactElement, container) {
 
 
-    // Version - 1 (This version is ok but incase of the no.of attributes it could be a problem so we ned to generalize it.) 
+    // Version - 1 (This version is ok but incase of the no.of attributes it could be a problem so we need to generalize it.) 
     /*  
     const domEle = document.createElement(reactElement.type);
     

@@ -24,7 +24,7 @@ function Card(props)  {
                     </p>
             
                     <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-                        View Profile →
+                    {props.someobj} →
                     </button>
             
                 </div>

@@ -6,7 +6,7 @@
 
 3) npm run start  --> It is used to start the app
 
-4) npm run build  --> It is for the deployment of the app in the production. It creates a build folder which includes all the js, css files and many more, this is the folder that is actually served to the user for using not the actuial source folder.
+4) npm run build  --> It is for the deployment of the app in the production. It creates a build folder which includes all the js, css files and many more, this is the folder that is actually served to the user for using not the actual source folder.
 
 
 5) Creating a react app thorugh vite
@@ -77,7 +77,7 @@ const reactElement = {
     children: "Visit Google.com"
 }
 
-2 ) we can create React element using React.createElement() method which has  special syntax for taking parameters attributes or properties of the element
+2 ) we can create React element using React.createElement() method which has special syntax for taking parameters attributes or properties of the element
 
 Example:
 
@@ -122,7 +122,7 @@ What is the Virtual DOM?
 
 The Virtual DOM (VDOM) is an in-memory representation of the actual DOM elements. Instead of directly manipulating the browser's DOM, which can be slow, React creates a virtual copy of the DOM. This virtual DOM is a lightweight JavaScript object that mirrors the structure of the real DOM.
 
- How Does the Virtual DOM Work?
+How Does the Virtual DOM Work?
 
 1. Initial Render:
    - When a React component is first rendered, React creates a virtual DOM tree that mirrors the structure of the real DOM.

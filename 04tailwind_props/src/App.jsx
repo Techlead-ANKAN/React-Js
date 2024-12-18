@@ -8,7 +8,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   let myobj = {
-    name: "Ankan Maity"
+    n1: "Ankan Maity",
+    n2: "Atanu Ghosh"
   }
 
   let newarr = [1,2,3]
@@ -17,10 +18,10 @@ function App() {
     <>
       <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind Test</h1>
 
-      <Card channel="Chai aur code" someobj = {myobj} somearr = {newarr} />
+      <Card channel="Chai aur code" someobj = {myobj.n1} somearr = {newarr} />
       
       
-      <Card />
+      <Card channel="Chai aur code" someobj = {myobj.n2} somearr = {newarr} />
     </>
   )
 }

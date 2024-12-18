@@ -5,9 +5,9 @@ function App() {
 
   const [length, setLength] = useState(8);  // for length of the password 
 
-  const [numberallowed, setNumberAllowed] = useState(false);  // for numbers in password
+  const [numberallowed, setNumberAllowed] = useState(true);  // for numbers in password
 
-  const [charallowed, setCharAllowed] = useState(false);  // for characters in password 
+  const [charallowed, setCharAllowed] = useState(true);  // for characters in password 
 
   const [password, setPassword] = useState("");
 
@@ -22,8 +22,8 @@ function App() {
     if (charallowed) str += "~!#$%^&*{}[]`";
 
     for (let i = 1; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1);
-      pass += str.charAt(char);
+      let char = Math.floor(Math.random() * str.length + 1);  // generating random indexes
+      pass += str.charAt(char);  // adding that character present in the randomly generated index
     }
 
     setPassword(pass);
@@ -62,7 +62,6 @@ function App() {
           }}/>
           <label htmlFor="">Characters</label>
         </div>
-
       </div>
     </>
   )

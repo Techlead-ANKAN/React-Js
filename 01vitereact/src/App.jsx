@@ -1,7 +1,7 @@
 import Myfunc from "./myfile"
 
 
-// Note: we all know App() is a function and this is file is jsx where x ---> for the HTML part and js is for the JavaScript part. Since there is the JavaScript Part so we should be able to send variables
+// Note: we all know App() is a function and this file is jsx where x ---> for the HTML part and js is for the JavaScript part. Since there is the JavaScript Part so we should be able to send variables.
 
 // You can send variables by using {<variable_name>}
 
