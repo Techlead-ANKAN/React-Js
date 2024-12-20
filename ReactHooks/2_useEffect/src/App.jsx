@@ -1,48 +1,33 @@
 import { useState, useEffect } from 'react'
-import check from "./check.png"
-import './App.css'
 
-function App() {
 
-  const [num , setnum] = useState(0);
+function App(){
+
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const icon = document.getElementsByClassName("icon")[0];
-    icon.style.backgroundImage = `url(${check})`;
+    document.title = `${count} new messages!`;
+  }, [count])
 
-    let timer = setTimeout(() => {
-      icon.style.backgroundImage = '';
-    }, 500);
-
-
-    return () => {
-      icon.style.backgroundImage = `url(${check})`;
-    };
-  }, [num]);
-
-  function increment() {
-    if (num < 99){
-      setnum(num+1)
-    }
-  }
-
-  function decrement(){
-    if (num > 0){
-      setnum(num-1);
-    }
-  }
 
   return (
     <>
-      <p>Counter: {num}</p>
-      <div class="icon"></div>
-
-      <div class="box">
-        <button class="add" onClick={increment}>Increment</button>
-        <button class="sub" onClick={decrement}>Decrement</button>
-      </div>
+      <h3>{count} new messages!</h3>
+      <button onClick={() => {setCount(count + 1)}}>Click</button>
     </>
   )
 }
 
 export default App
+
+/*
+NOTE:
+
+1) No dependency given, it will update for every and any change that happens to that component
+
+2) Empty Array given, in this case it will update only at the time of rendering of the component
+
+3) Dependency Array given, in this case it will update when there is any change to the any one of the items in the dependency array
+
+
+*/
