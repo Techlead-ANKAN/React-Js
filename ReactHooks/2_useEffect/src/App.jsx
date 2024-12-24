@@ -23,11 +23,10 @@ export default App
 /*
 NOTE:
 
-1) No dependency given, it will update for every and any change that happens to that component
+1) No dependency given, it will update for every and any change that happens to that component and also on the first render of the component
 
-2) Empty Array given, in this case it will update only at the time of rendering of the component
+2) Empty Array given, in this case it will update only at the time of first rendering of the component
 
 3) Dependency Array given, in this case it will update when there is any change to the any one of the items in the dependency array
-
 
 */
