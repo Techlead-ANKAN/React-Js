@@ -1,20 +1,24 @@
 // Custom Hook
-
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 function useCurrencyInfo(currency) {
 
-    const [data, setData] = useState({})
+  const [data, setData] = useState({});
 
-    useEffect(() => {
-        fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
-        .then((res) => res.json())
-        .then ((res) => setData(res[currency]))
-        console.log(data)
-    }, [currency])
-    console.log(data)
-    return data;
+  useEffect(() => {
+    // Fetching the data from the url
+    fetch(
+      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`
+    )
+      // Converting the response from string to json format
+      .then((res) => res.json())
 
+      // Selecting only the required part 
+      .then((res) => setData(res[currency]));
+      // useEffect hook is triggered when there is any change in currency
+  }, [currency]);
+
+  return data;
 }
 
 export default useCurrencyInfo;
