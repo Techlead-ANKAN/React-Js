@@ -1,5 +1,5 @@
 import React from 'react'
-import {Outlet} from "react-router-dom" // This utility will use this layout as a base and wherever there is outlet you can change it 
+import { Outlet } from "react-router-dom" // This utility will use this layout as a base and wherever there is outlet you can change it 
 import { Header } from './components'
 import { Footer } from './components'
 
