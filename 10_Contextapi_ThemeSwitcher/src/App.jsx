@@ -30,19 +30,17 @@ function App() {
       <div className="w-full">
       
         <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
-          {/* Theme Button Componenet */}
-          <ThemeBtn />
+          {/* Theme Button Component */}<ThemeBtn />
         </div>
 
         <div className="w-full max-w-sm mx-auto">
-          {/* Card component */}
-          <Card />
+          {/* Card component */}<Card />
         </div>
       
       </div>
     
     </div>
-   </ThemeProvider>
+  </ThemeProvider>
   )
 }
 
