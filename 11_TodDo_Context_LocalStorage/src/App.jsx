@@ -6,25 +6,24 @@ function App() {
 
   const [todos, setTodos] = useState([]);
 
-  // functionality of adding todos
+  // 1) Functionality of "adding" todos
   const addToDo = (todo) => {
     setTodos((prev) => [{id: Date.now(), ...todo}, ...prev])
   }
 
-
-  // functionality to update todo
+  // 2) Functionality to "update" todos
   const updateToDo = (id, todo) => {
     setTodos((prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)))
   }
 
-  // functionality to delete todo
+  // 3) Functionality to "delete" todo
   const deleteToDo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id ))
   }
 
-  // functionality to toggle completed
+  // 4) Functionality to "toggle" completionof todos
   const toggleComplete = (id) => {
-    setTodos((prev) => prev.map((prevTodo) => {prevTodo === id ? "true" : prevTodo}))
+    setTodos((prev) => prev.map((prevTodo) => {prevTodo === id ? {...prevTodo, completed: !prevTodo.completed} : prevTodo}))
   }
 
   return (
