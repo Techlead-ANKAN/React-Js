@@ -31,7 +31,8 @@ function App() {
   }, [length, numberallowed, charallowed, setPassword]);
 
 
-  useEffect(() => {passwordGen();
+  useEffect(() => {
+    passwordGen();
   }, [length, numberallowed, charallowed, passwordGen])
 
   const CopyPassword = useCallback(() => {
