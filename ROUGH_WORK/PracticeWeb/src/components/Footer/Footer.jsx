@@ -1,9 +1,8 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
-function Footer() {
+export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+      <></>
+  );
 }
-
-export default Footer

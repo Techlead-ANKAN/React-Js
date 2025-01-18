@@ -4,12 +4,12 @@ import './index.css'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx"
-import { Home, About, Contact, Login} from "./components/index.js"
+import { Home, About, Contact, Login } from './components/index.js'
 
 const ProjectRouter = createBrowserRouter([
   {
     path: "/",
-    element: <layout />,
+    element: <Layout />,
     children: [
       {
         path: "",
