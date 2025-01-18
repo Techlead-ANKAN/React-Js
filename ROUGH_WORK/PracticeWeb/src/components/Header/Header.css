@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #333;
+}
+
+.tabs a.active {
+  color: #007bff;
+}
+
+img{
+    width: 110px;
+    height: 45px;
+}
