@@ -1,0 +1,14 @@
+div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 70%;
+    min-height: 90vh;
+    border-radius: 5vh;
+}
