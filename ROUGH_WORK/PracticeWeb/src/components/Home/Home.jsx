@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useLogin } from '../../context';
 
 function Home() {
+
+  const {isLogin, username} = useLogin();
+
+  if(!isLogin){
+    return(
+      <p>Please Login</p>
+    )
+  }
+
+
   return (
     <>
-    Home
+    <p>Hello {username}</p>
     </>
   )
 }
