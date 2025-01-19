@@ -3,7 +3,9 @@ import { useLogin } from '../../context';
 
 function Home() {
 
-  const {isLogin, username} = useLogin();
+  const {isLogin, username} = useLogin();  
+  console.log('username:', username); // Add this line
+  console.log('isLogin:', isLogin); // Add this line
 
   if(!isLogin){
     return(
@@ -14,7 +16,7 @@ function Home() {
 
   return (
     <>
-    <p>Hello {username}</p>
+      <p>Hello {username}</p>
     </>
   )
 }
