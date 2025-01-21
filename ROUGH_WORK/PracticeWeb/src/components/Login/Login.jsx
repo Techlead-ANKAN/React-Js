@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLogin } from '../../context';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 function Login() {
 
-  const {changeLogin, changeUsername, changePassword} = useLogin();
+  
+  const {isLogin, changeLogin, changeUsername, changePassword} = useLogin();
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const navigate = useNavigate();
-
+  
+  console.log("Before: "+isLogin);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -18,10 +20,15 @@ function Login() {
     }
     else{
       changeLogin(true);
+
       console.log("Username: " + username);
       console.log("Password: " + password);
+      
     }
   }
+  useEffect(() => {
+    console.log("After: "+isLogin);
+  } , [isLogin, changeLogin])
   
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
