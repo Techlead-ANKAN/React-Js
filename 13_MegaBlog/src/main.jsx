@@ -7,6 +7,7 @@ import store from "./store/store.js";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* Wrapping up the App component under Provider mentioning the "store" */}
     <Provider store={store}>
       <App />
     </Provider>
