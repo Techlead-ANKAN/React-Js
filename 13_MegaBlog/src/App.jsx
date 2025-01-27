@@ -8,9 +8,10 @@ import './App.css'
 
 function App() {
 
-  // console.log(import.meta.env.VITE_APPWRITE_URL);
-
+  // this is for managing whether it is in the loading phase or not
   const [loading, setLoading] = useState(true);
+
+  
   const dispatch = useDispatch();
 
   useEffect(() => {
