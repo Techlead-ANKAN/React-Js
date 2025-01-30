@@ -100,7 +100,7 @@ export class Service{
             return true; // returning true if deletion is successfull
         } catch (error) {
             throw error;
-            return false; // returning true if deletion is successfull
+            return false; // returning true if deletion is not successfull
         }
     }
 
