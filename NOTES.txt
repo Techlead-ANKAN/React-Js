@@ -174,4 +174,4 @@ This process makes React highly performant, even in applications with frequent a
 
 1) npm install -D tailwindcss postcss autoprefixer     ----->     This will install tailwindcss and its peer dependencies, then generate your tailwind.config.js and postcss.config.js files.
 
-2) npx tailwindcss init -p   -----> It will create 2 files "tailwind.config.js" and "postcss.config.js"
+2) npx tailwindcss init -p   ----> It will create 2 files "tailwind.config.js" and "postcss.config.js"
