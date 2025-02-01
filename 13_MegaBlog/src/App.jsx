@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
 
-  // this is for managing whether it is in the loading phase or not
+  // this is for managing whether it is in the loading phase / not
   const [loading, setLoading] = useState(true);
 
   
